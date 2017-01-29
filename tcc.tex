@@ -132,23 +132,31 @@ A pesquisa deve ser desenvolvida em uma área na qual as mudanças de uso da terra
 
 O trabalho foi dividido em cinco capítulos. O presente capítulo que introduz o assunto e traz os objetivos da pesquisa. O Capítulo 2 que apresenta as características ambientais e históricas da área de estudo. O Capítulo 3 traz uma fundamentação teórica sobre os principais temas que circundam esta pesquisa. O Capítulo 4 expõe as etapas metodológicas envolvidas no desenvolvimento do trabalho. O Capítulo 5 que apresenta e discute os resultados encontrados. E por fim o Capítulo 6 sintetiza os resultados do trabalho e traz algumas considerações.
 
-\chapter{SENSORIAMENTO REMOTO}
+\chapter{\uppercase{Referencial Teórico}}
+
+\section{Sensoriamento Remoto}
+
 \lettrine{S}{ensoriamento} remoto é a técnica de obter informações de um objeto, área ou fenômeno sem ter contato físico com o mesmo \citep{pisharoty_introduction_to_remote_sensing}. Para \cite{lillesand_kiefer_remote_sensing_image_interpretation}, o sensoriamento remoto é uma ciência e arte: ciência pois é um campo do conhecimento com rígidas regras, como a matemática e física, e arte dado que a interpretação e análise de um dado obtido vai além do conhecimento científico. A mistura de ciência e arte fazem os estudiosos do senriamento remoto desenvolver tanto habilidades científicas quanto empíricas no seu processo entendimento dos dados obtidos remotamente \citep{jensen_remote_sensing_of_the_environment}.
 
 Atualmente existem diversas ferramentas para a obtenção dos dados por sensoriamento remoto. Inicialmente, fotografias aéreas eram o principal meio de obtenção dos dados remotos. Hoje, além das fotografias aéreas, também existem dezenas de satélites missões na órbita terrestre captando os mais diferentes tipos de dados da Terra \citep{pisharoty_introduction_to_remote_sensing}. Estes satélites carregam variados tipos de sensores para a coleta dos dados, capazes de gerar diferentes informações sobre a Terra \citep{ustin_manual_of_remote_sensing}.
 
+Os dados obtidos por satélites têm sido utilizados para diversos fins, dentre eles: criação de modelos ambientais, para a avaliação de recursos naturais, levantamento de uso e ocupação do solo, análise de sustentabilidade, etc. O uso do sensoriamento remoto nestes casos têm se tornado fundamental para trabalhos que buscam análises regionais e globais pelas vantagens econômicas e logísticas.
 
-\chapter{ALTIMETRIA POR SATÉLITE}
+\section{Altimetria por Satélite}
 
 \lettrine{S}{egundo} \cite{peixoto_altimetria_nivel_mar}, altimetria é uma técnica de mensuração de altura. Altimetria por satélite ou radar é a mensuração da altitude de um ponto específico na Terra utilizando satélites na órbita terrestre.
 
-O princípio básico do cálculo utilizado pelos satélites altimétricos para a mensuração de altura da superfície terrestre é relativamente simples. A altimetria por radar mede  
-
 Inicialmente, a altimetria por satélite foi utilizada para a medida instantânea do nível dos oceanos, obtendo alto nível de precisão \citep{calmant_seyler_continental_surface_water_satellite_altimetry}. Posteriormente tais satélites também passaram a ser utilizados em corpos d'água continentais, como rios e lagos.
 
-\section{ Uso para altimetria e análise hidrológica}
+O princípio básico do cálculo utilizado pelos satélites altimétricos para a mensuração de altura da superfície terrestre é relativamente simples. A altimetria por radar mede a distância entre o satélite e a superfície terrestre através da emissão de ondas de radar, cujos ecos são refletidos pela superfície, seja ela oceano, geleiras, gelo de mar, desertos, rios ou lagos. Essa distância, chamada de alcance (range), possui duas extremidades: acima é a posição do satélite que é conhecida de modo preciso através da sua órbita, referente ao elipsóide, com a contribuição de algum dispositivo de navegação a bordo do satélite, como o Orbit Determination Radiopositioning Integrated on Satellite (DORIS) ou Global Positioning Sistem (GPS). Abaixo, a elevação absoluta da superfície é obtida da diferença entre a altitude da órbita e o alcance, com as correções para dos efeitos atmosféricos de propagação e reflexão na superfície \citep{vignudelli_et_all_coastal_altimetry}.
 
-\chapter{SISTEMAS DE INFORMAÇÃO GEOGRÁFICOS}
+No Simpósio de Williamstown, realizado em 1969 e promovido pela National Aeronautics and Space Administration (NASA), os mais de 65 pesquisadores definiram as diversas técnicas que poderiam contribuir para o desenvolvimento do estudo da física oceânica e geofísica terrestre. No relatório final do evento publicaram os participantes publicaram um guia com recomendações para o desenvolvimento deste campo de estudo. Os pontos fundamentais deste documento dizem respeito à definição dos altímetros de precisão que seriam colocados nos satélites para a obtenção dos dados oceânicos e gravimétricos \citep{kaula_et_al_terrestrial_environment}. Foram detalhadas especificações do projeto para uma missão altimétrica da NASA, com o objetivo principal de mensurar o formato da Terra. O documento definia, entre outros detalhes, o nível de precisão de 1 metro, dez segundos de intervlo entre as medições, vida útil de um ano para a missão e uma órbita circular.
+
+As primeiras missões lançadas eram bem próximas as definições do relatório gerado em Williamstown. As missões eram: Skylab em 1973, Geodetic and Earth Orbiting Satellite 3 (GEOS-3) em 1975 e o Seasat em 1978 \citep{sulistioadi_satellite_altimetry}.
+
+O avanço da tecnologia dos altímetros gerou equipamentos mais precisos, permitindo o uso de seus dados em diversos estudos em Geodésia, Geofísica, Glaciologia, Oceanografia e Hidrologia Continental \citep{vignudelli_et_all_coastal_altimetry}.
+
+\section{Sistemas de informação geográficos}
 
 \lettrine{S}{istemas} de informação podem ser definidos como um conjunto integrado de componentes capazes de coletar, armazenar e processar dados com o objetivo de disponibilizar informações ou conhecimento para seus usuários \citep{zwass_information_system}. Existem atualmente diversos tipos de sistemas de informações para diversos usos, como mecanismos de buscas, sistemas de informação corporativos, sistemas de informações geográficos, etc \citep{laudon_laudon_management_information_systems}.
 
@@ -160,11 +168,23 @@ Para \citeauthor*{kraak_brown_web_cartography}, existem dois tipos fundamentais 
 
 Atualmente existem diversos exemplos de mapas dinâmicos amplamente utilizados na Internet. Alguns deles são de uso genérico como o Google Maps e Bing Maps, outros são aplicações com propósitos específicos, como o aplicativo para rotas de veículos Waze ou o aplicativo para busca de restaurantes Yelp.
 
-\chapter{OBJETIVOS}
+\chapter{\uppercase{Objetivos}}
 
 O objetivo deste trabalho é desenvolver um sistema de informação geográfico (SIG) online com os dados altimétricos do Rio São Francisco. Ao desenvolver este SIG, tem-se como objetivo principal exibir de maneira amigável os dados gerados pelas EAVs e dados \textit{in-situ}, permitindo a análise de diversos fatores relacionados as medições altimétricas do rio.
 
 Com o SIG em funcionamento, serão realizadas análises espaciais e temporais sobre o Rio São Francisco com o objetivo de entender o seu comportamento e ciclo hidrológico.
+
+\chapter{\uppercase{Materiais e métodos}}
+
+\section{Construção da aplicação web}
+
+Para o desenvolvimento da aplicação online, foram utilizadas diversas ferramentas e práticas de desenvolvimento de software.
+
+A aplicação foi dividida em duas partes, uma Application Public Interface (API) que expõe os dados disponíveis no banco de dados da aplicação, e a interface web que os usuários utilizam. A separação entre lógica e interface é uma boa prática no desenvolvimento de software.
+
+Para o desenvolvimento da API, foi utilizada a linguagem de programação Python (versão 2.7) com o framework para desenvolvimento web Flask (versão 1.12). A API foi implementada seguindo os princípios RESTful.
+
+Para o desenvolvimento da interface web, foram utilizadas as bibliotecas: Leaflet, para a construção dos mapas; jQuery para as interações com o mapa e menus. Além disso, foi também utilizado o framework NodeJS para a conexão dos dados do front-end com o back-end.
 
 %\ref{fig:estudo}.
 %
